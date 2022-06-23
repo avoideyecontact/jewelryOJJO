@@ -8,4 +8,5 @@
 ## Все разработка ведёться в директории `source`
 ## Итоговый код попадает в директорию `build`
 
-### Дизайн: https://d-e-n.info/blog/templates/2020-11-30-shablon-yuvelirnogo-magazina.html
+### Дизайн сайта:
+https://d-e-n.info/blog/templates/2020-11-30-shablon-yuvelirnogo-magazina.html

@@ -1,0 +1,8 @@
+@media (max-width: ($max-width - 1px)) {
+    .menu-hidden {
+        display: none;
+    }
+}
+
+@media (min-width: $max-width) {
+}

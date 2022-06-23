@@ -1,0 +1,17 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "stickyfooter.scss";
+@import "center.scss";
+@import "page-header.scss";
+@import "menu-hidden.scss";
+
+html {
+  font-family: "Gilroy", "Arial", sans-serif;
+  min-width: $min-width;
+}
+
+// activates when menu is open
+.noscroll {
+  overflow: hidden;
+}

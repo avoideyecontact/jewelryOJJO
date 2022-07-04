@@ -1,14 +1,31 @@
 .page-header {
     background-color: $color-accent;
+    background-image: url("../img/bg-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     color: $color-white;
+    text-align: center;
 }
 
 .page-header__wrapper {
     display: grid;
     grid-template-columns: 1fr 218px 1fr;
+}
+
+.page-header__title {
+    margin: 0;
+    margin-top: 500px;
+    margin-bottom: 50px;
+    font-family: 'Noto Serif', Times, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: center;
 }
 
 .page-header__nav {
@@ -25,6 +42,63 @@
     padding: 20px;
     padding-top: 45px;
     padding-bottom: 45px;
+}
+
+.page-header__link--main {
+    display: block;
+    width: fit-content;
+    padding: 15px 35px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    background-color: $color-accent;
+    border: 1px solid $color-white;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.page-header__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid $color-white;
+}
+
+.page-header__brand {
+    width: 175px;
+    height: 60px;
+    // border-right: 1px solid $color-white;
+    background-image: url("../img/brand-item.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: 0.25s;
+
+    &:hover {
+        transition: 0.25s;
+        opacity: 0.5;
+    }
+}
+
+.page-header__link--brand {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.page-header__brand:last-child {
+    border-right: none;
 }
 
 .page-header__logo {
@@ -84,10 +158,12 @@
     .page-header {
         font-size: 21px;
         line-height: 29px;
+        background-position-y: 0;
+        background-size: cover;
+        background-image: url("../img/bg-header.jpg");
     }
 
     .page-header__wrapper {
-        height: 100vh;
         display: flex;
         flex-direction: column;
         padding-top: 30px;
@@ -102,6 +178,17 @@
     }
 
     .page-header__nav {
+        text-align: left;
+    }
+
+    .page-header__title {
+        margin-top: 250px;
+        padding-left: 35px;
+        padding-right: 35px;
+
+    }
+
+    .page-header__nav {
         display: flex;
         flex-direction: column;
         margin-top: 45px;
@@ -110,6 +197,11 @@
     .page-header__link {
         padding: 15px;
         padding-left: 0;
+    }
+
+    .page-header__link--main {
+        text-align: center;
+        padding: 15px 35px;
     }
 
     .page-header__right-column {
@@ -127,6 +219,7 @@
         padding-left: 0;
         margin-bottom: 20px;
         width: 100%;
+        text-align: left;
     }
 
     .page-header__buttons {
@@ -165,4 +258,41 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .page-header__list {
+        display: none;
+    }
+
+    .page-header--closed {
+        .page-header__nav {
+            display: none;
+        }
+        .page-header__buttons {
+            display: none;
+        }
+        .page-header__login {
+            display: none;
+        }
+    }
+
+    .page-header--opened {
+        background-image: none;
+        background-color: $color-accent;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+
+
+        .page-header__title {
+            display: none;
+        }
+        .page-header__link--main {
+            display: none;
+        }
+        .page-header__buttons {
+            padding-left: 10px;
+        }
+    }
+
+    
 }

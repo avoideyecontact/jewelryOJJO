@@ -22,9 +22,10 @@
 }
 
 .events__list--buttons {
-    column-gap: 14px;
+    column-gap: 8px;
     margin-bottom: 55px;
     row-gap: 15px;
+    justify-content: center;
 }
 
 .events__item--button {
@@ -74,7 +75,8 @@
 }
 
 .events__list--products {
-    gap: 25px;
+    gap: 15px;
+    justify-content: center;
 }
 
 .events__item--product {

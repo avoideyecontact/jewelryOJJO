@@ -1,0 +1,133 @@
+.events__text {
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+
+.events__title {
+    font-family: 'Noto Serif', Times, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.events__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.events__list--buttons {
+    column-gap: 14px;
+    margin-bottom: 55px;
+    row-gap: 15px;
+}
+
+.events__item--button {
+    width: 171px;
+    height: 61px;
+    position: relative;
+}
+
+.events__button {
+    border: none;
+    box-sizing: border-box;
+    width: 165px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: $color-accent;
+    cursor: pointer;
+    border: 1px solid $color-grey;
+    background-color: $color-white;
+    text-transform: uppercase;
+}
+
+.events__button::after {
+    position: absolute;
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 165px;
+    height: 55px;
+    border: 1px solid $color-grey;
+    bottom: 0;
+    right: -3px;
+    z-index: -1;
+}
+
+.events__button--active {
+    background-color: $color-accent;
+    width: 100%;
+    height: 100%;
+    color: $color-white;
+}
+
+.events__button--active::after {
+    content: none;
+}
+
+.events__list--products {
+    gap: 25px;
+}
+
+.events__item--product {
+    width: 350px;
+    height: 280px;
+    background-color: #aaaaaa;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--1 {
+        background-image: url("../img/product--1.jpg");
+    }
+    &--2 {
+        background-image: url("../img/product--2.jpg");
+    }
+    &--3 {
+        background-image: url("../img/product--3.jpg");
+    }
+    &--4 {
+        background-image: url("../img/product--4.jpg");
+    }
+    &--5 {
+        background-image: url("../img/product--5.jpg");
+    }
+    &--6 {
+        background-image: url("../img/product--6.jpg");
+    }
+}
+
+
+
+.events__link {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
+    display: block;
+    padding-top: 222px;
+    padding-bottom: 30px;
+}
+
+
+
+@media (max-width: ($max-width - 1px)) {
+    .events__list {
+        justify-content: center;
+    }
+
+    .events__list--products {
+        row-gap: 0;
+    }
+}

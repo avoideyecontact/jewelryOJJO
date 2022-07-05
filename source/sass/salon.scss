@@ -1,0 +1,24 @@
+.salon__title {
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.salon__text {
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+.salon__text {
+    margin-bottom: 60px;
+}
+
+.salon__button {
+    border: 1px solid $color-accent;
+    padding: 15px 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media (max-width: ($max-width - 1px)) {
+}

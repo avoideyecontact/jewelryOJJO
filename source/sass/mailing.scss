@@ -1,0 +1,132 @@
+
+.mailing__span {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.mailing__title {
+    font-family: 'Noto Serif', Times, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.mailing__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+.mailing__bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+.mailing__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.mailing__item {
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.mailing__item::before {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    left: -35px;
+    top: 4px;
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m11 8.5-3.75 2.17V6.33L11 8.5Z' fill='%23fff'/%3E%3Cpath d='M4.75 2 16 8.5 4.75 15V2Z' stroke='%23fff'/%3E%3C/svg%3E");
+}
+
+.mailing__form {
+    border: 1px solid $color-white;
+    height: fit-content;
+}
+
+.mailing__form-wrapper {
+    margin: 14px 15px;
+    padding: 20px 22px;
+    background-color: $color-white;
+    display: flex;
+    column-gap: 15px;
+}
+
+.mailing__field {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    border: 1px solid $color-grey;
+    text-transform: uppercase;
+}
+
+.mailing__field::placeholder {
+    color: rgba($color-accent, 0.5);
+}
+
+.mailing__send {
+    background-color: $color-accent;
+    color: $color-white;
+    text-transform: uppercase;
+    border: none;
+    padding: 14.5px 35px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+
+@media (max-width: ($max-width - 1px)) {
+
+    .mailing__title {
+        margin-bottom: 30px;
+    }
+
+    .mailing__bottom {
+        flex-direction: column;
+    }
+
+    .mailing__list {
+        margin: 0 auto;
+        position: relative;
+        right: -10px;
+    }
+
+    .mailing__form {
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .mailing__form-wrapper {
+        justify-content: space-between;
+    }
+
+    .mailing__field {
+        width: 100%;
+    }
+
+}

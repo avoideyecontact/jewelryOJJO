@@ -19,6 +19,14 @@
     padding-bottom: 150px;
 }
 
+.page-main__mailing {
+    background-color: $color-accent;
+    background-image: url("../img/salon-tile.jpg");
+    color: $color-white;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
 @media (max-width: ($max-width - 1px)) {
 
     .page-main__events {

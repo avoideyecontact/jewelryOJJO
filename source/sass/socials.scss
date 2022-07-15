@@ -20,6 +20,7 @@
     padding: 0;
     margin: 0;
     gap: 0;
+    width: 100%;
 }
 
 .socials__link {
@@ -48,20 +49,20 @@
     transition: 0.5s;
 }
 
+.socials__img {
+    width: 50%;
+}
+
+.socials__link--video .socials__img {
+    width: 100%;
+}
+
 @media (max-width: ($max-width - 1px)) {
 
     .socials__list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .socials__img {
-        width: 50%;
-    }
-
-    .socials__link--video .socials__img {
         width: 100%;
     }
 
